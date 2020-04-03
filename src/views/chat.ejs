@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chat</title>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+    <link rel='icon' href='http://localhost:3000/logo.png' type='image/x-icon' />
+    <link href="../../chat.css" type="text/css" rel="stylesheet" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+</head>
+
+<body>
+    <h1>Welcome to group chat, <%=user.username %>
+        <label value="Logout">
+            <a href="/auth/logout">Logout</a>
+        </label>
+    </h1>
+
+
+    <div id="wholediv">
+
+        <label id="id" style="display: none;"><%=user.id %></label>
+        <label id="nameN"><%=user.username %></label>
+        <div id="output" />
+        <% for (var message of messages){ %>
+        <p><%=message.name%>:<%= message.message%> </p>
+        <%}%>
+        <br>
+
+    </div>
+
+
+    <textarea type="text" id="input" placeholder="type a message here..."></textarea>
+    <button id="send">
+        Send
+    </button>
+
+    </div>
+    <script src="../../chat.js"></script>
+</body>
+
+</html>

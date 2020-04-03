@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+#wholediv {
+    background-color: rgba(92, 189, 68, 0.507);
+    margin: auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+     padding: 4%; 
+    border: #BB3F30 1px solid;
+     height: 500px; 
+}
+#output{
+    text-align: left;
+    background-color: honeydew;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    position: relative;
+    overflow: auto;
+    color: green;
+    display: block;
+}
+
+#input{
+    margin-top: 0.5em;
+    margin-left: auto;
+    width: 60%;
+    height: 20%;
+    position: relative;
+    overflow: scroll;
+    float: left;
+    resize: none;
+}
+h1{
+    text-align: center;
+}
+button{
+    float: right;
+    display: block;
+    margin: auto;
+    margin-top: 0.5em;
+    width: 20%;
+    height: 20%;
+    border-radius: 30%;
+}
+button:hover{
+    background-color:rgba(35, 68, 26, 0.507);
+}
+
+label{
+    font-style: italic;
+    text-align: right;
+}
