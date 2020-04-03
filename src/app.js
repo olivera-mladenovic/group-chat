@@ -43,6 +43,10 @@ app.get("/login", (req, res, next) => {
     return res.render('login');
 });
 app.use("/auth", authRoutes);
+
+app.use("/", (req, res, next) => {
+    return res.redirect('/login');
+});
 const server = app.listen(process.env.PORT, () => {
     console.log('Listening on port 3000');
 });
